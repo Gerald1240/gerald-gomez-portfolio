@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/directionArrow"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/directionDistanceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#AA000000"
+        android:padding="8dp"
+        android:text="Dirección: Norte\nDistancia: 0m"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ocrTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directionDistanceView"
+        android:layout_marginTop="22dp"
+        android:background="#AA000000"
+        android:padding="8dp"
+        android:text="OCR: Ningún texto detectado"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Regresar"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

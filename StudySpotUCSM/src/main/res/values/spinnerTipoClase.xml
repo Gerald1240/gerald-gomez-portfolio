@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo_clase">
+        <item>Teoria</item>
+        <item>Práctica</item>
+    </string-array>
+</resources>

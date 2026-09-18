@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="15dp"
+    tools:context=".TaskEditor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editor de Cursos"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:textSize="20dp"
+            android:hint="Curso"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinnerTipoClase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="De:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apreta Aqui"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Hasta:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apreta Aqui"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Pabellón:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinnerBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Salón:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinnerRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/professorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:textSize="20dp"
+            android:hint="Profesor"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/Ubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:textSize="20dp"
+            android:hint="Ubicacion"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Color:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Curso"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="10dp"/>
+    </LinearLayout>
+</ScrollView>

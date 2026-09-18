@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buildings_array">
+        <item>Pabellón A</item>
+        <item>Pabellón B</item>
+        <item>Pabellón C</item>
+        <item>Pabellón D</item>
+        <item>Pabellón E</item>
+        <item>Pabellón CH</item>
+        <item>Pabellón O</item>
+        <item>Pabellón G</item>
+        <item>Pabellón H</item>
+        <item>Pabellón I</item>
+        <item>Pabellón F</item>
+        <item>Pabellón L</item>
+        <item>Pabellón R</item>
+        <item>Pabellón S</item>
+    </string-array>
+</resources>
