@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Querybot - SAVEC</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* Animación de puntos suspensivos */
+        .loading-dots::after {
+            content: '...';
+            animation: dots 1s steps(5, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { color: rgba(0,0,0,0) }
+            40% { color: black }
+            60% { color: black }
+            80%, 100% { color: rgba(0,0,0,0) }
+        }
+
+        .bot-message.loader {
+            font-style: italic;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <header class="header-container">
+        <img src="/static/logo.png" alt="Otro Logo" class="header-logo">
+    </header>
+    <div class="chat-container">
+        <div class="logo-container">
+            <img src="/static/logo_savec.png" alt="Logo de SAVEC" class="logo">
+        </div>
+        <h1>QUERYBOT - SAVEC</h1>
+        <div id="chat-box">
+            <!-- Mensaje inicial que muestra las opciones -->
+            <div class="bot-message">¡Hola! Soy el asistente de SAVEC. Elige un modo para continuar:</div>
+            <div class="bot-message">
+                1️⃣ Consultas SQL<br>
+                2️⃣ Generar ejemplos de preguntas<br>
+                0️⃣ Volver al menú principal
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." autocomplete="off">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+    <footer class="footer-container">
+        QUERYBOT - SUSTENTACION TESIS JUNIO-2026
+    </footer>
+    <script>
+        const chatBox = document.getElementById("chat-box");
+        const userInput = document.getElementById("user-input");
+        const sendButton = document.getElementById("send-button");
+
+        function appendMessage(sender, message, isLoader = false) {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = sender === "user" ? "user-message" : "bot-message";
+            if (isLoader) {
+                messageDiv.classList.add("loader", "loading-dots");
+                messageDiv.textContent = "SAVEC está escribiendo";
+                messageDiv.id = "loading-message";
+            } else {
+                if (sender === "bot") {
+                    messageDiv.innerHTML = message;
+                } else {
+                    messageDiv.textContent = message;
+                }
+            }
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function removeLoader() {
+            const loader = document.getElementById("loading-message");
+            if (loader) loader.remove();
+        }
+
+        sendButton.addEventListener("click", async () => {
+            const input = userInput.value.trim();
+            if (!input) return;
+
+            appendMessage("user", input);
+            userInput.value = "";
+
+            // Mostrar animación de carga
+            appendMessage("bot", "", true);
+
+            try {
+                const response = await fetch("/get_response", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ user_input: input }),
+                });
+                const data = await response.json();
+
+                // Quitar loader
+                removeLoader();
+
+                if (data.error) {
+                    appendMessage("bot", "Ocurrió un error al procesar tu solicitud.");
+                } else {
+                    appendMessage("bot", data.response);
+                }
+            } catch (error) {
+                removeLoader();
+                appendMessage("bot", "Error al conectarse con el servidor.");
+            }
+        });
+
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") sendButton.click();
+        });
+    </script>
+</body>
+</html>
