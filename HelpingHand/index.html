@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="firebaseconect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HelpingHand</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>        
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#service">Servicios</a></li>
+          <li><a href="#explore">Explorar</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="button-container">
+          <a href="login.html"><button class="btn-login">Login</button></a>
+          <a href="login.html"><button class="btn1">Registrarse</button></a>
+      </div>                 
+      </nav>
+      <div class="section__container header__container" id="home">
+        <p>Conecta - Confía - Comparte</p>
+        <h1>Conecta con expertos de confianza y resuelve tus necesidades<br />Con un solo <span>Clic</span>.</h1>
+      </div>
+    </header>
+
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-in">Buscar Trabajador</label>
+            <input type="text" placeholder="Segun calificación" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-out">Agenda el Dia</label>
+            <input type="text" placeholder="Segun tu urgencia" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-user-fill"></i></span>
+          <div>
+            <label for="guest">Revisa su Historial</label>
+            <input type="text" placeholder="Usando sus reseñas" />
+          </div>
+        </div>
+        <div class="input__group input__btn">
+          <a href="login.html" class="btn">EMPEZAR</a>
+      </div>      
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">NOSOTROS</p>
+        <h2 class="section__header">Las mejores soluciones comienzan aquí.</h2>
+        <p class="section__description">
+          Somos una plataforma dedicada a conectar a trabajadores de oficios esenciales con personas que buscan servicios de calidad y confianza. Nuestro objetivo es brindar una solución accesible y rápida tanto para quienes necesitan ofrecer sus habilidades como para aquellos que buscan profesionales confiables. En nuestra comunidad, valoramos la transparencia y la eficiencia, permitiendo que cada interacción sea respaldada por reseñas y calificaciones reales. Con HelpingHand, simplificamos la búsqueda de expertos, creando oportunidades para todos.
+        </p>
+        <div class="about__btn">
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container room__container">
+      <p class="section__subheader">Nuestros Servicios</p>
+      <h2 class="section__header">Encuentra al profesional perfecto para cada tarea.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-1.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Electricista Certificado</h4>
+            <p>
+              Soluciones seguras y eficientes para cualquier problema eléctrico en tu hogar o negocio.
+            </p>
+            <h5>Desde <span>100 soles/servicio</span></h5>
+            <a href="login.html" class="btn">Agenda Ahora</a>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-2.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Plomero de Confianza</h4>
+            <p>
+              Reparaciones y mantenimiento de alta calidad, siempre a tiempo.
+            </p>
+            <h5>Desde <span>80 soles/servicio</span></h5>
+            <a href="login.html" class="btn">Agenda Ahora</a>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-3.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Carpintero Experto</h4>
+            <p>
+              Diseños personalizados y trabajos de carpintería impecables para tu hogar.
+            </p>
+            <h5>Desde <span>120 soles/servicio</span></h5>
+            <a href="login.html" class="btn">Agenda Ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <div class="service__content">
+          <p class="section__subheader">SERVICIOS</p>
+          <h2 class="section__header"> Facilitamos tu Búsqueda de Profesionales Confiables</h2>
+          <ul class="service__list">
+            <li>
+              <span><i class="ri-shield-star-line"></i></span>
+              Seguridad Garantizada
+            </li>
+            <li>
+              <span><i class="ri-24-hours-line"></i></span>
+              Soporte 24/7
+            </li>
+            <li>
+              <span><i class="ri-headphone-line"></i></span>
+              Diversidad de Oficios
+            </li>
+            <li>
+              <span><i class="ri-map-2-line"></i></span>
+              Sistema de Reseñas
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__content">
+        <div class="banner__card">
+          <h4>500+</h4>
+          <p>Trabajadores registrados</p>
+        </div>
+        <div class="banner__card">
+          <h4>1,000+</h4>
+          <p>Servicios completados</p>
+        </div>
+        <div class="banner__card">
+          <h4>800+</h4>
+          <p>Clientes satisfechos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <p class="section__subheader">EXPLORAR</p>
+      <h2 class="section__header">¡Nuevos servicios disponibles en nuestra plataforma!</h2>
+      <div class="explore__bg">
+        <div class="explore__content">
+          <p class="section__description">10 de Octubre de 2024</p>
+          <h4>Conectar trabajadores con clientes nunca fue tan fácil.</h4>
+          <a href="login.html" class="btn">Descubre más</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <p class="section__description">
+            Descubre una nueva manera de conectar con profesionales confiables. Facilita el proceso de encontrar el servicio que necesitas con nuestro sistema intuitivo y verificado.
+          </p>
+          <a href="login.html" class="btn">CONTRATA AHORA</a>
+        </div>
+        <div class="footer__col">
+          <h4>ENLACES RÁPIDOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">EXPLORAR SERVICIOS</a></li>
+            <li><a href="#">OFERTAS ESPECIALES</a></li>
+            <li><a href="#">TIPOS DE TRABAJO Y PRECIOS</a></li>
+            <li><a href="#">RESEÑAS Y CALIFICACIONES DE CLIENTES</a></li>
+            <li><a href="#">METODOS DE PAGO</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>NUESTROS SERVICIOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">ASISTENCIA AL CLIENTE</a></li>
+            <li><a href="#">OPCIONES DE CONTRATACIÓN FLEXIBLES</a></li>
+            <li><a href="#">CONEXIÓN CON PROFESIONALES</a></li>
+            <li><a href="#">PROMOCIONES ESPECIALES</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACTANOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">helpinghand@contacto.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+            <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 HelpingHand. Todos los derechos reservados.      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
