@@ -1,0 +1,51 @@
+html{
+    background: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-taobao-tmall-men-s-day-promotional-poster-men-s-wear-image_191300.jpg)
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.marco{
+    background-color: rgba(231, 237, 229, 0.981);
+    border: 15px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.textinput{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sesion{
+    background-color: rgba(231, 237, 229, 0.981);
+    border: 15px solid transparent;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.table{
+    background-color: rgba(231, 237, 229, 0.981);
+    border: 15px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

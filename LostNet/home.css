@@ -1,0 +1,203 @@
+/* Estilos personalizados */
+body {
+    background-image: url(img/font.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    margin-bottom: 50px; /* Añadido un margen en la parte inferior para dar espacio */
+}
+.green-nav {
+    background-color: #4CAF50;
+    padding: 15px 0; /* Aumentado el padding un poco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-left: 20px; /* Aumentado el margen a la izquierda */
+}
+.green-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px; /* Aumentado el margen a la derecha */
+}
+.green-nav ul li {
+    display: inline;
+    margin: 0 15px; /* Aumentado el margen entre los ítems de la lista */
+}
+.green-nav ul li a {
+    color: white;
+    padding: 10px 25px; /* Aumentado el padding horizontal */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.green-nav ul li a:hover {
+    background-color: #388E3C;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-bottom: 50px; /* Añadido un margen en la parte inferior para dar espacio */
+}
+.login-box {
+    padding: 25px; /* Aumentado el padding general */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Estilos personalizados para la nueva sección */
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; /* Aumentado el padding vertical */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres cuadros por fila */
+    gap: 20px; /* Espacio entre cuadros */
+    width: 140%;
+    max-width: 2000px;
+}
+
+.item {
+    width: 100%;
+    padding-top: 100%; /* Esto mantiene la proporción cuadrada */
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Escondemos lo que exceda el tamaño del cuadro */
+    width: 100%;
+    padding-top: 100%;
+}
+
+}
+
+.items-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Aumentado el espacio entre cuadros */
+    width: 60%;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres cuadros por fila */
+    gap: 20px; /* Espacio entre cuadros */
+}
+
+.item {
+    width: 100%;
+    padding-top: 100%; /* Esto mantiene la proporción cuadrada */
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Escondemos lo que exceda el tamaño del cuadro */
+    background-size: cover;  /* Hace que la imagen cubra todo el cuadro */
+    background-position: center; /* Centra la imagen en el cuadro */
+}
+
+.percentage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 30px; /* Añadido un margen en la parte inferior para dar espacio */
+}
+
+.percentage-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.percentage-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px; /* Aumentado el espacio entre el círculo y el texto */
+}
+
+.percentage-container {
+    width: 100%; /* Ocupa todo el espacio disponible en su contenedor padre */
+}
+
+.percentage-circle {
+    width: 300px; /* Aumentamos el tamaño del círculo */
+    height: 300px;
+    font-size: 80px; /* Aumentamos el tamaño del texto del porcentaje */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #8CDA81; /* Color verde */
+    font-size: 100px;
+    color: white;
+}
+
+.item img {
+    width: 100%;    /* Asegura que la imagen ocupe todo el ancho del cuadro */
+    height: 100%;   /* Asegura que la imagen ocupe todo el alto del cuadro */
+    object-fit: cover; /* Asegura que la imagen cubra todo el cuadro sin deformarse */
+}
+
+.item[data-img="nombreDeTuImagen"] {
+    background-image: url(img/image1.jpg);
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item[data-img="image1"] {
+    background-image: url(img/image1.jpg);
+}
+
+.item[data-img="image2"] {
+    background-image: url(img/image2.jpg);
+}
+
+.item[data-img="image3"] {
+    background-image: url(img/image3.jpg);
+}
+
+.item[data-img="image4"] {
+    background-image: url(img/image4.jpg);
+}
+
+.item[data-img="image5"] {
+    background-image: url(img/image5.jpg);
+}
+
+.item[data-img="image6"] {
+    background-image: url(img/image6.jpg);
+}
+
+.percentage-text {
+    font-size: 50px; /* Ajusta este valor según tu preferencia */
+    font-weight: bold;
+    -webkit-text-stroke: 1px black; /* Borde alrededor del texto para navegadores basados en WebKit (como Chrome y Safari) */
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; /* Sombra de texto simulando un borde para otros navegadores */
+}

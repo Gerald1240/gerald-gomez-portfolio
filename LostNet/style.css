@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Cambiamos la tipografía por defecto a Montserrat */
+    background: url("img/font.png") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+ .form-body {
+    width: 480px;
+    min-width: 300px;
+ }
+ 
+ .form-body img {
+    width: 158px;
+    display: block;
+    margin: 20px auto;
+ }
+ 
+ .text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+ }
+ 
+ .form-body input {
+     display: block;
+     margin: auto;
+     height: 40px;
+     width: 75%;
+     padding-left: 10px;
+     color: #10bc64;
+     border: 5px solid #10bc64;
+     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif; /* Aplicamos Montserrat a los inputs también */
+     background-color: transparent;
+     border-radius: 18px;
+     font-size: 1rem;
+     outline: none;
+ }
+ 
+ .form-body input[type="password"] {
+     margin-top: 20px;
+ }
+ 
+ ::placeholder {
+     font-size: 1rem;
+     color: rgba(255, 255, 255, .596);
+ }
+ 
+ .form-body input:hover {
+    transition: .5s;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+ }
+ 
+ .form-body button {
+     display: block;
+     margin: auto;
+     margin-top: 25px;
+     margin-bottom: 30px;
+     height: 40px;
+     width: 78%;
+     background: linear-gradient(#10bc64, #10bc64);
+     color: #fff;
+     border-radius: 18px;
+     /*Bordescompletamenteredondos*/cursor: pointer;
+     outline: none;
+     border: 2px solid #10bc64;
+     transition: all .5s ease;
+     -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+     -ms-border-radius: 18px;
+     -o-border-radius: 18px;
+}
+ 
+.form-body input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    color: #fff; /* Cambiamos el color a blanco */
+    border: 5px solid #10bc64;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-radius: 18px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.additional-links a {
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.additional-links a:hover {
+    color: #10bc64; /* Cambia al color que desees cuando se pasa el mouse por encima */
+}
+
+.form-body button {
+    display : block ;
+    margin : auto ;
+    margin-top : 25px ;
+    margin-bottom : 30px ;
+    height : 40px ;
+    width : 78% ;
+    background : #10bc64;  /* Color de fondo verde */
+    color : #fff ;         /* Color de texto blanco */
+    border-radius : 25px ; /* Bordes redondeados */
+    cursor : pointer ;
+    outline : none ;
+    border: none;          /* Eliminar borde */
+    font-size: 1.2rem;     /* Aumentar tamaño de letra */
+    transition: all .5s ease ;
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.form-body button:hover {
+    background-color: #0a9b50; /* Color de fondo un poco más oscuro al pasar el mouse por encima */
+}
+
+.form-body button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background-color: #10bc64; /* Color de fondo verde */
+    color: #fff; /* Color de texto blanco */
+    border-radius: 50px; /* Hace que los bordes sean completamente redondos */
+    cursor: pointer;
+    outline: none;
+    border: none; /* Remueve cualquier borde */
+    font-family: 'Montserrat', sans-serif; /* Utiliza la fuente Montserrat */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    transition: all .5s ease;
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    font-weight: 600; /* Hace que el texto sea semi-grueso */
+}
+
+.form-body button:hover {
+    background-color: #0a8d52; /* Oscurece un poco el color de fondo cuando se pasa el mouse por encima */
+}

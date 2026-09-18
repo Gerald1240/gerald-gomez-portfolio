@@ -1,0 +1,71 @@
+/* Estilos personalizados */
+body {
+    background-image: url(img/font.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    margin-bottom: 50px; /* Añadido un margen en la parte inferior para dar espacio */
+}
+.green-nav {
+    background-color: #4CAF50;
+    padding: 15px 0; /* Aumentado el padding un poco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-left: 20px; /* Aumentado el margen a la izquierda */
+}
+.green-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px; /* Aumentado el margen a la derecha */
+}
+.green-nav ul li {
+    display: inline;
+    margin: 0 15px; /* Aumentado el margen entre los ítems de la lista */
+}
+.green-nav ul li a {
+    color: white;
+    padding: 10px 25px; /* Aumentado el padding horizontal */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.green-nav ul li a:hover {
+    background-color: #388E3C;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-bottom: 50px; /* Añadido un margen en la parte inferior para dar espacio */
+}
+.login-box {
+    padding: 25px; /* Aumentado el padding general */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Color basado en la imagen proporcionada */
+.header-color {
+    background-color: #50a684; /* Ajusta este valor según tu necesidad exacta */
+    color: #ffffff; 
+}
+
+/* Estilos para las imágenes dentro de los flexbox */
+.flexbox-image {
+    flex: 1; /* Ocupar espacio disponible equitativamente */
+    display: flex; 
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+img.img-fluid {
+    max-width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
