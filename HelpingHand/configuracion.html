@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign in || Sign up from</title>
+
+    <script type="module" src="login.js"></script>
+    <script type="module" src="firebaseconect.js"></script>
+    <script type="module" src="signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="form-styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#service">Servicios</a></li>
+          <li><a href="#explore">Explorar</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+        <a href="login.html" id="logout-link">
+        <button class="btn1">Cerrar Sesión</button>
+      </a>
+    </div>  
+      </nav>
+    </header>
+
+    <!-- js code -->
+    <script>
+        const container = document.getElementById('container');
+        const overlayCon = document.getElementById('overlayCon');
+        const overlayBtn = document.getElementById('overlayBtn');
+        
+        // Función para centrar el texto dentro del botón
+        function centerButtonText(button) {
+            // Aplicar estilos directamente usando JS
+            button.style.display = "flex";
+            button.style.justifyContent = "center";
+            button.style.alignItems = "center";
+        }
+    
+        // Aplicar la clase de escala y centrar el texto del botón
+        overlayBtn.addEventListener('click', () => {
+            container.classList.toggle('right-panel-active');
+    
+            // Remover clase y volver a añadirla para animación
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame(() => {
+                overlayBtn.classList.add('btnScaled');
+            });
+    
+            // Centrar el texto del botón después de la animación
+            centerButtonText(overlayBtn);
+        });
+    
+        // Asegurarse de que el texto esté centrado al cargar la página
+        centerButtonText(overlayBtn);
+    </script>
+    
+</body>
+</html>
